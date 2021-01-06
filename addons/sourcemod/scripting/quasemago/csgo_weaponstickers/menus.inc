@@ -164,7 +164,7 @@ static void ShowWeaponStickerSlotMenu(int client, int slot)
 		
 		char stickerName[MAX_LENGTH_DISPLAY];
 		eItems_GetStickerDisplayNameByDefIndex(g_PlayerWeapon[client][weaponIndex].m_sticker[i], stickerName, sizeof(stickerName));
-		AddMenuItemFormat(menu, buffer, _, "Slot %i Наклейка( %s ) \n -> Value : %f", i, stickerName, g_PlayerWeapon[client][weaponIndex].m_wear[i]);
+		AddMenuItemFormat(menu, buffer, _, "Slot %i Sticker( %s ) \n -> Value : %f", i, stickerName, g_PlayerWeapon[client][weaponIndex].m_wear[i]);
 		//AddMenuItemFormat(menu, slot, _, "Slot %i\n  -> %T.", i, "None Sticker", client);
 	}
 	
